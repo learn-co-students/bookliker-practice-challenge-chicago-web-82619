@@ -1,7 +1,5 @@
 function main(){
     document.addEventListener("DOMContentLoaded", function() {
-        let books = [];
-        let allUsers = [];
         fetchBooks();
         fetchUsers();
     });
