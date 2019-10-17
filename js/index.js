@@ -110,8 +110,6 @@ function patchBook(book, user){
 function removeUser(book, user){
     let readers = book.users; 
     let filtered = readers.filter(u=>{
-        console.log(u);
-        console.log(user);
         return u.username != user.username;
     });
     fetch(`http://localhost:3000/books/${book.id}`, {
